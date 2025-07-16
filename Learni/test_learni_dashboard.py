@@ -3,6 +3,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 import time
+import pytest
 
 def test_learni_dashboard():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -37,10 +38,15 @@ def test_learni_dashboard():
             time.sleep(2)
         except:
             print("❌ Notification not working")
+        assert True
 
     else:
         # ✅ Only check error toast if login failed
-        
+        try:
             error_toast = driver.find_element(By.CLASS_NAME, "toast-message").text
             print("❌ Login failed:", error_toast)
+        except:
+            error_toast = driver.find_element(By.CLASS_NAME, "toast-message").text
+            print("❌ Login failed:", error_toast)
+        assert False, "❌ Login failed - dashboard not reached"
     driver.quit()
