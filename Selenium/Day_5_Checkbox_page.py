@@ -12,9 +12,9 @@ def test_checkbox_page():
    try:
     expand_button=driver.find_element (By.XPATH, "//button[@title='Expand all']")
     expand_button.click ()
-    print ("Expanded button working")
+    print ("Expand button working")
    except Exception as e:
-    print ("Expanded button not showing", e)
+    print ("Expand button not showing", e)
    time.sleep (2)
    try:
     checkbox= driver.find_element (By.XPATH, "//span[@class='rct-title' and text()='Desktop']")
