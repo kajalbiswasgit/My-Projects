@@ -8,7 +8,6 @@
 
 ### Example 
 day = input("What is today: ").strip().lower()
-
 # First, check for invalid number input
 if any(char.isdigit() for char in day):
     print("❌ Numbers are not allowed. Please enter a valid day.")

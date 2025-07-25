@@ -14,4 +14,3 @@ elif len (raw_inputs.strip().replace(" ", "")) <8:
     print ("Too short. please enter a valid 8 characters long")
 else:
     print ("Strong enough")
-

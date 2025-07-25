@@ -46,7 +46,6 @@ def test_learni_dashboard():
             error_toast = driver.find_element(By.CLASS_NAME, "toast-message").text
             print("❌ Login failed:", error_toast)
         except:
-            error_toast = driver.find_element(By.CLASS_NAME, "toast-message").text
-            print("❌ Login failed:", error_toast)
+            print("❌ Login failed: Unknown reason (no toast found)")
         assert False, "❌ Login failed - dashboard not reached"
     driver.quit()

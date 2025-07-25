@@ -15,5 +15,5 @@ print() prints a welcome message for each city.
 """
 # Create a list of 5 of your favorite fruits and print them one by one using a loop.
 fruits = ["Apple","Mango","Strawberry","Guava","Grapes"]
-for favorite in fruits:
-    print("My top favorite fruit is:", favorite)
+for i in range (len(fruits)):
+    print (f"{i+1}. My top favorite fruit is {fruits[i]}")
