@@ -1,3 +1,14 @@
+# Write a Python program to validate a user’s phone number based on the following rules:
+"""It must not be blank
+
+It must contain only digits
+
+It must be exactly 10 digits long
+
+It must not start with 0"""
+
+
+
 phone = input("Enter your phone number: ").strip()  
 # Asks user to enter number, removes any spaces around
 
