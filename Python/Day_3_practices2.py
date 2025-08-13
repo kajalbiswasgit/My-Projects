@@ -8,11 +8,10 @@ If not, show a friendly error message and ask again."""
 
 age= None
 while True: # Loop until a valid input is entered
-
     try:
         age= int(input("Please enter your age (1-120): "))
         if age < 1 or age > 120:
-             print("❌ Age must be between 1 and 120.")
+             print("Age must be between 1 and 120.")
              continue
 
         if age >= 1 and age <= 12:
@@ -28,7 +27,7 @@ while True: # Loop until a valid input is entered
                print ("You are a senior citizen.")
                break
         else:
-              print("❌ Please enter a valid age.")  
+              print("Please enter a valid age.")  
               break
               
     except ValueError:
@@ -39,8 +38,3 @@ if age is not None:  # Show valid age
     print("✅ Thank you! Your age is:", age)
 else:
     print("You did not enter a valid age.") # Should never reach here unless code changes
-
-
-
-
-

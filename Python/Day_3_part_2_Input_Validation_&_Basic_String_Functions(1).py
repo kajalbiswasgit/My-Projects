@@ -1,7 +1,5 @@
 # Day 3 – Input Validation & Basic String Functions
-
 # strip() — What does it do? - It removes the spaces before and after, but not between words.
-
 # replace() Function — What is it? This removes all the spaces by replacing " " with an empty string "".
 """
  msg = "apple banana apple"

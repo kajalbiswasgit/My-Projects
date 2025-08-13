@@ -12,5 +12,3 @@ while True:
         print ("Invalid input. Please enter a number only")
 
 print("Thank you! Your age is:", age)
-
-

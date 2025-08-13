@@ -2,7 +2,7 @@
 """ | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 1 | `# List of 3 tools you are learning`        | ✅  This is just a note for humans. Python ignores this. Anything after `#` is a comment.                                                                                                                                                                              |
 2 | `tools = ["Selenium", "Postman", "Git"]`    | ✅ **List creation** – You are creating a list named `tools`. It contains 3 string values: `"Selenium"`, `"Postman"`, and `"Git"`.
-                                                      You can access each tool using its **index** (position).                                                                                         |
+                                                      You can access each tool using its **index** (position).                                                                     |
 3 | `for i in range(len(tools)):`               | ✅  🔹 `len(tools)` counts how many items are in the list → here it returns `3`.
                                                      🔹 `range(3)` gives numbers from 0 to 2 → `[0, 1, 2]`.
                                                      🔹 `for i in ...` means: Do this block **3 times**, once for each number `i` (0, 1, 2). |
