@@ -15,12 +15,11 @@ students = [
 ]
 
 # Print full data of Amit
-print("Q18:", students[1])
+print("Full data of amit:", students[1])
 
 # Print Kajal's science marks
-print("Q19:", students[0][1][1])
+print("Kajal's science marks:", students[0][1][1])
 
 # Print all student names using loop
-print("Q20: Names =")
 for i in range (len(students)):
     print (f"{i+1}. My top students are {students[i][0]}")
