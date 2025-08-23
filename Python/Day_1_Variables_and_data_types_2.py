@@ -1,4 +1,4 @@
-#Variables store values
+# Variables store values
 
 #Common data types:
 # int,
